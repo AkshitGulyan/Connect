@@ -1,3 +1,14 @@
+Title: Connect: Uniting Innovators for Hackathons
+
+Introduction:
+Welcome to Connect, the ultimate platform designed to bring together talented individuals, foster collaboration, and ignite innovation for hackathons. Whether you're a coding enthusiast, a design wizard, or a visionary problem-solver, TeamUp is here to help you find the perfect teammates to conquer hackathon challenges together. In this introduction, we will provide an overview of our project and how it empowers hackers to create winning teams.
+
+
+
+
+
+
+
 Project Vision: 
 
 Our vision for the project,  is to create a platform that facilitates the formation of high-performing teams for hackathons based on participants' profiles. We aim to bring together individuals with diverse skill sets, backgrounds, and experiences to foster innovation, collaboration, and creativity.
