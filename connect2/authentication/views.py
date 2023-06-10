@@ -38,7 +38,7 @@ def signup(request):
         messages.success(request,'Your account has been successfuly created')
 
         #Welcome EMAIL
-        subject = 'Welcmoe to Connect'
+        subject = 'Welcoe to Connect'
         message = 'Hello ' + my_user.first_name + '! \n' + 'Thanks for registering on Connect Web Application  \n\n  -- Team Connect'
         from_email = settings.EMAIL_HOST_USER
         to_list = [my_user.email]
