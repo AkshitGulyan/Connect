@@ -14,7 +14,7 @@ from django.core.mail import send_mail
 
 def home(request):
     fname=None
-    return render(request,r'C:\Users\akshi\OneDrive\Desktop\codeclause projects\Connect2\connect2\templates\index.html',{'firstname':fname})
+    return render(request,r'C:\Users\akshi\OneDrive\Desktop\codeclause projects\Connect2\connect2\templates\landing.html',{'firstname':fname})
 
 def signup(request):
     if request.method == 'POST':
@@ -29,7 +29,7 @@ def signup(request):
             return redirect('home')
 
 
-        my_user=User.objects.create_user(email=email,password=pass1,username=firstname)
+        my_user=User.objects.create_user(email=email,password=pass1, username = email)
         print(my_user.password)
         my_user.first_name=firstname
         my_user.last_name=lastname
@@ -38,7 +38,7 @@ def signup(request):
         messages.success(request,'Your account has been successfuly created')
 
         #Welcome EMAIL
-        subject = 'Welcmoe to Connect'
+        subject = 'Welcome to Connect'
         message = 'Hello ' + my_user.first_name + '! \n' + 'Thanks for registering on Connect Web Application  \n\n  -- Team Connect'
         from_email = settings.EMAIL_HOST_USER
         to_list = [my_user.email]
