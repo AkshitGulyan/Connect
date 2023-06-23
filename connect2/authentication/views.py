@@ -14,7 +14,7 @@ from django.core.mail import send_mail
 
 def home(request):
     fname=None
-    return render(request,r'C:\Users\akshi\OneDrive\Desktop\codeclause projects\Connect2\connect2\templates\landing.html',{'firstname':fname})
+    return render(request, 'landing.html',{'firstname':fname})
 
 def signup(request):
     if request.method == 'POST':
@@ -73,7 +73,7 @@ def signin(request):
             messages.success(request,"Correct Credentials")
             fname=user.first_name
 
-            return render(request, r'C:\Users\akshi\OneDrive\Desktop\codeclause projects\Connect2\connect2\templates\index.html', {'firstname':fname})
+            return render(request, 'landing.html', {'firstname':fname})
 
         else:
             messages.error(request,'Wrong Credentials')
