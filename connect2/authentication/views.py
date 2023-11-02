@@ -47,7 +47,7 @@ def signup(request):
 
         return redirect('home')
 
-    return render(request, r"C:\Users\akshi\OneDrive\Desktop\codeclause projects\Connect2\connect2\templates\signupfile.html")
+    return render(request, "signupfile.html")
 
 
 # def sign():
@@ -76,10 +76,10 @@ def signin(request):
             return render(request, 'landing.html', {'firstname':fname})
 
         else:
-            messages.error(request,'Wrong Credentials')
+            # messages.error(request,'Wrong Credentials')
             return redirect('home')
 
-    return render(request, r"C:\Users\akshi\OneDrive\Desktop\codeclause projects\Connect2\connect2\templates\loginfile.html")
+    return render(request, "loginfile.html")
 
 def signout(request):
     logout(request)
