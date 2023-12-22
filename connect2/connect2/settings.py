@@ -137,6 +137,7 @@ STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
     BASE_DIR / "connect2\authentication\static",
+    BASE_DIR / "connect2\home\static",
 
 ]
 
